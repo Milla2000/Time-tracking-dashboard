@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
+body {
+  background-color: hsl(226, 43%, 10%);
+  margin-top: 7vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 280%;
+  font-stretch: expanded;
+}
+
+h4 {
+  font-size: 120%;
+  color: rgb(97, 89, 89);
+}
+
+.box {
+  padding-top: 5px;
+}
+
+.grid {
+  /* padding-top: 10vh; */
+  margin: auto;
+  /* height: 570px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  max-width: 1100px;
+  /* max-height: 600px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "a b c d"
+    "a e f g";
+  grid-gap: 1.5rem;
+  /* margin: 1rem; */
+  /* border: solid red; */
+  color: white;
+  font-family: "Heebo", sans-serif;
+  /* overflow: hidden; */
+}
+
+.one {
+  /* max-height: 100vh; */
+  /* height: 70%; */
+  /* max-height: 100%; */
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  /* position: absolute;  */
+  /* margin-top: 1opx; */
+  /* border: solid red; */
+}
+.img {
+  width: 100%;
+  height: 100%;
+  /* border: solid red; */
+}
+
+.vertical {
+  margin-top: -18px;
+  padding-left: 35px;
+  background-color: hsl(235, 46%, 20%);
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.two {
+  /* background-image: url(/images/icon-work.svg); */
+  background-color: hsl(15, 100%, 70%);
+  flex-direction: column;
+  grid-area: b;
+  border-radius: 24px;
+  z-index: -2;
+  max-height: 90px;
+  /* object-fit: contain; */
+  /* overflow: hidden; */
+  /* border: solid red; */
+}
+.imgs {
+  max-width: 100px;
+  border: solid white;
+  border-radius: 60px;
+}
+.up-side {
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: hsl(235, 56%, 57%);
+  border-radius: 20px;
+  /* position: relative; */
+  z-index: 2;
+}
+.three {
+  object-fit: contain;
+  border-radius: 24px;
+  background-color: hsl(195, 74%, 62%);
+  grid-area: c;
+  z-index: -2;
+  max-height: 90px;
+  /* overflow: hidden; */
+  /* border: solid red; */
+}
+.four {
+  border-radius: 24px;
+  background-color: hsl(348, 100%, 68%);
+  grid-area: d;
+  z-index: -2;
+  object-fit: contain;
+  max-height: 90px;
+
+  /* border: solid red; */
+}
+.five {
+  border-radius: 24px;
+  background-color: hsl(145, 58%, 55%);
+  grid-area: e;
+  z-index: -2;
+  max-height: 90px;
+  /* border: solid red; */
+}
+.six {
+  border-radius: 24px;
+  background-color: hsl(264, 64%, 52%);
+  grid-area: f;
+  z-index: -2;
+  max-height: 90px;
+  /* border: solid red; */
+}
+.seven {
+  border-radius: 24px;
+  background-color: hsl(43, 84%, 65%);
+  grid-area: g;
+  z-index: -2;
+  max-height: 90px;
+  /* overflow: hidden; */
+  /* border: solid red; */
+}
+.svgs {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  /* width: 10px; */
+}
+.small-div {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+
+  /* max-width: ; */
+  z-index: 2;
+}
+.down-side {
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 10px;
+}
+.put-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.yellow {
+  height: 60px;
+  background-color: hsl(43, 84%, 65%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.red {
+  height: 60px;
+  background-color: hsl(348, 100%, 68%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.purple {
+  height: 60px;
+  background-color: hsl(264, 64%, 52%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.blue {
+  height: 60px;
+  background-color: hsl(195, 74%, 62%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.green {
+  height: 60px;
+  background-color: hsl(145, 58%, 55%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.orange {
+  height: 60px;
+  background-color: hsl(15, 100%, 70%);
+  position: relative;
+  z-index: -1;
+  top: 10px;
+  overflow: hidden;
+  margin-top: -12px;
+  border-radius: 20px;
+  padding-right: 13px;
+  /* margin-top: 10px; */
+}
+.small-div {
+  padding: 20px;
+}
